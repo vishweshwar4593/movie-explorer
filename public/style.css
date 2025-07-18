@@ -216,4 +216,49 @@ h1 {
 .alert.hidden {
   display: none;
 }
+/* Scrolling Footer Styling */
+.scroll-footer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  border-top: 2px solid #444;
+  z-index: 1000;
+}
 
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Individual Name Colors */
+.name-vish {
+  color: #ff6b6b; /* Soft Red */
+  font-weight: bold;
+}
+.name-phanindra {
+  color: #1dd1a1; /* Mint Green */
+  font-weight: bold;
+}
+.name-sree {
+  color: #54a0ff; /* Blue */
+  font-weight: bold;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
