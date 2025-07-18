@@ -182,3 +182,12 @@ function showAlert(message, duration = 2000) {
     alertBox.classList.add("hidden");
   }, duration);
 }
+// 👇 Footer scroll animation
+window.addEventListener("scroll", () => {
+  const footer = document.getElementById("team-footer");
+  const rect = footer.getBoundingClientRect();
+
+  if (rect.top <= window.innerHeight - 50) {
+    footer.classList.add("show-footer");
+  }
+});
